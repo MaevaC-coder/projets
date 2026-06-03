@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Language Learning</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css"/> <!-- Lien vers la feuille de style CSS -->
+    <script src="java.js"></script>
+</head>
+
+<body>
+    <div>
+        <a href="https://www.domsortais.fr/">
+            <img id="dom_sortais" src="DOM.png"/>
+        </a>
+    </div>
+    <CENTER>
+        <u class="Blanc_Gras_Titre"><h1 class="Blanc_Gras_Titre">QUIZ</h1></u>
+        <div>
+            <table>
+                <u>Choisir la langue de base:</br></u>
+                    <select class="selection" id="base">
+                        <option>Français</option>
+                        <option>Espagnol</option>
+                        <option>Allemand</option>
+                        <option>Anglais</option>
+                    </select>
+                <br>
+                <u><br> La langue d'entrainement: </br></u>
+                    <select class="selection" id="entrainement">
+                        <option>Anglais</option>
+                        <option>Espagnol</option>
+                        <option>Allemand</option>
+                        <option>Français</option>
+                    </select>
+            </tr>
+            <br>
+            <br>
+            <input type="button" class="bouton" value="Crée ton quiz!" onclick="openPage()">
+            </table>
+        </div>
+    </CENTER>
+</body>
+</html>

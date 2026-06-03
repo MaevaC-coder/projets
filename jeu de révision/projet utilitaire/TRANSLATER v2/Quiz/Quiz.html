@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Language Learning</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css"> <!-- Lien vers la feuille de style CSS -->
+    <script src="java.js"></script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <u><h1>Question numéro X</h1></u>
+        <p>Le mot généré est : <span id="mot"></span></p>
+        <p>Comment dit-on <span id="mot"></span> en <span id="traduction"></span>?</p>
+        <label for="fr">
+            <input type="radio" name="langue" id="fr" value="fr"> ...............
+        </label><br>
+        <label for="nl">
+            <input type="radio" name="langue" id="nl" value="nl"> ...............
+        </label><br>
+        <label for="en">
+            <input type="radio" name="langue" id="en" value="en"> ...............
+        </label><br>
+        <label for="other">
+            <input type="radio" name="langue" id="other" value="other"> ...............
+        </label>
+        <br>
+        <br>
+        <input type="button" class="bouton" value="Vérification" onclick="alerte()">
+    </div>
+</body>
+</html>

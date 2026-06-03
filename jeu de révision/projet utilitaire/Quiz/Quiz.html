@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz LanguageLearning</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css"/> <!-- Lien vers la feuille de style CSS -->
+</head>
+<body>
+    <script>
+        fetch('translation.csv')
+            .then(response => response.text())
+            .then(data => {
+                const lines = data.split('\n');
+                const list_fr = [];
+                const list_ang = [];
+                const list_esp = [];
+                const list_all = [];
+
+                lines.forEach(line => {
+                    const colonnes= line.split(';');
+                    if (colonnes.length >= 4) {
+                        french_list.push(colonnes[0]);
+                        english_list.push(colonnes[1]);
+                        spanish_list.push(colonnes[2]);
+                        german_list.push(colonnes[3]);
+                    }
+                });
+            })
+    </script>
+    <div class='description'>Mode de jeu sous forme de quiz~</div> <!-- Bloc sous-titre -->
+    <div id='menu'>
+        <table>
+            <br> Choisir la langue de base :</br>
+                <select id="base" onchange="selbase()">
+                    <option>français</option>
+                    <option>espagnole</option>
+                    <option>allemand</option>
+                    <option>anglais</option>
+                </select>
+ 
+            <br> La langue d'entrainement </br>
+                <select id="entrainement" onchange="selentrainement()">
+                    <option>français</option>
+                    <option>espagnole</option>
+                    <option>allemand</option>
+                    <option>anglais</option>
+                </select>
+        </tr>
+        <h2></h2>
+        <input type="button" value="créer ton quizz !" onclick="quiz()">
+        </table>
+    </div>
+</body>
+</html>

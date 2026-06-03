@@ -1,0 +1,70 @@
+body {
+	background: #FFFFFF;
+	font-size: 30px;
+	color: #ebebebef
+	
+}
+
+html {
+	overflow-x : hidden;
+	font-family : Calibri;
+}
+
+.Blanc_Gras_Titre {
+	font-size: 100px;
+	text-shadow: 5px 5px 5px hsl(0, 0%, 70%);
+	color: #424242ef;	
+}
+
+body {
+    background-image: url(Quiz_fond.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+.selection {
+	width: 120px;
+	height: 30px;
+	border: 1px solid rgb(160, 159, 159);
+	font-size: 18px;
+	color: #525252;
+	background-color: rgb(230, 228, 228);
+	border-radius: 5px;
+	box-shadow: 4px 4px #ccc;
+}
+
+.bouton {
+	width: 130px;
+	height: 40px;
+	border: 1px solid rgb(129, 129, 129);
+	font-size: 18px;
+	color: #636363;
+	background-color: #eee;
+	border-radius: 5px;
+}
+
+.bouton:hover {
+	background-color:#c0c0c0;
+	transition: 0.2s;
+}
+
+.bouton:focus {
+    outline-color: transparent;
+    outline-style:solid;
+	transition: 1s;
+    box-shadow: 0 0 0 1px #585858;
+}
+
+.button:active {
+    background-color: #ffbf00;
+}
+
+#dom_sortais {
+	display: block;
+	float: top;
+	width: 85px;
+	height:100px;
+	margin-right: 0px;
+	margin-left: 5px;
+}
